@@ -1,12 +1,10 @@
 # easy setup to use later
 
-from distutils.core import setup
+from setuptools import setup, find_packages
 
-setup(name='Distutils',
-      version='1.0',
-      description='Python Distribution Utilities',
-      author='Greg Ward',
-      author_email='gward@python.net',
-      url='https://www.python.org/sigs/distutils-sig/',
-      packages=['distutils', 'distutils.command'],
-     )
+
+setup(
+    name="foo",
+    version="1.0",
+    packages=find_packages(),
+)
